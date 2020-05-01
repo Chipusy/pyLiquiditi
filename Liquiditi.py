@@ -1,7 +1,7 @@
 import requests
 
 
-class API():
+class API:
     API_VERSION = 'v1'
     API_URL = 'api.liquiditi.io'
 
