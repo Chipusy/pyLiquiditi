@@ -18,6 +18,12 @@ class API:
                 'Authorization': f'Token {self.token}'
             }
         })
+
+        if r.status_code != 200:
+            return {
+                'error': r.status_code,
+            }
+
         return r.json()
 
     def order_create(self, from_currency, to_currency, address):

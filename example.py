@@ -1,6 +1,6 @@
-from Liquiditi import API
+import Liquiditi
 
-api = API(token='**********************************')
+api = Liquiditi.API(token='**********************************')
 
 # currencies list and balances
 api.currency_list()
@@ -15,5 +15,5 @@ api.order_list(status='expired')
 api.order_create(
     from_currency='btc',
     to_currency='lbtc',
-    address = 'VJLJ5pYxVs9exe7zxq1MNbBeq7ZC1kGWT9psRQUD3k1f2Wdk9bffSKgVxbMhvtnGH4adscaRCRW1nGN6')
+    to_address='VJLJ5pYxVs9exe7zxq1MNbBeq7ZC1kGWT9psRQUD3k1f2Wdk9bffSKgVxbMhvtnGH4adscaRCRW1nGN6'
 )
